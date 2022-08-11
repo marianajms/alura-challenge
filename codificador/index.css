@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: #e9f4f1;
+    padding: 1% 8% 5% 8%;
+}
+.logo{
+    display: inline-block;
+}
+
+.main{
+    margin-top: -60px;
+    display:flex;
+    min-height: 30vw;
+}
+
+.formulario{
+    width: 80%;
+    margin: 1rem 2rem 0rem 4rem;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.formulario__aviso{
+    display:flex;
+    font-size: 0.8rem;
+    color: #495057;
+}
+
+.formulario__aviso>img{
+    margin-right: 7px;
+}
+
+.formulario__input{
+    background-color:#e9f4f1;
+    border: none;
+    color: #0A3871;
+    font-size: 1.2rem;
+    padding: 2rem 3rem;
+    width: 100%;
+}
+
+.formulario__botoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao{
+    padding: 1rem 3rem;
+    width: 46%;
+    font-size: 0.8rem;
+    border-radius: 24px;
+}
+
+.resultado{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    padding: 1rem 2rem;
+    text-align: center;
+    justify-content: center;
+    height: 75vh;
+    width:40%;
+}
+
+.cripBotao{
+    background-color: #0A3871;
+    border: solid 1px #0A3871;
+    color: #fff;
+}
+
+.descripBotao{
+    border: solid 1px #0A3871;
+    color: #0A3871;
+
+}
+
+
+.resultado__mensagem1{
+    font-weight: 700;
+    line-height: 120%;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.resultado__mensagem2{
+    font-size: 0.8rem;
+    line-height: 120%;
+}
+
+@media (max-width:900px){
+    .body{
+        padding: 0 0.8rem;
+    }
+
+    .main{
+        flex-direction: column;
+
+    }
+
+    .resultado{
+        box-sizing: initial;
+    }
+
+    .formulario{
+        margin: 65px 0 10px;
+        width: 100%;
+    }
+
+    .formulario__input{
+        padding: 10px 5px;
+        min-height: 180px;
+
+    }
+
+   .formulario__botoes{
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .botao{
+    width: 100%;
+    margin-bottom: 1rem;
+   }
+
+   .resultado{
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    box-sizing: border-box;
+   }
+}

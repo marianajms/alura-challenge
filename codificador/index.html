@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../codificador/imagens/Vector.svg">
+    <title>Codificador de Texto</title>
+    <link rel="stylesheet" href="../../../normalize.css">
+    <link rel="stylesheet" href="../codificador/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="logo">
+        <a href="index.html">
+            <img src="../codificador/imagens/Vector.svg" alt="">
+        </a>
+    </h1>
+    <main>
+        <div class="main">
+            <form action="" class="formulario">
+                <textarea class="formulario__input" placeholder="Digite seu texto"></textarea>
+                <div>
+                    <div class="formulario__aviso">
+                        <img src="../codificador/imagens/aviso.svg" alt="">
+                        <p>Apenas letras minúsculas e sem acento.</p>
+                    </div>
+
+                    <div class="formulario__botoes">
+                        <button class="botao cripBotao">Criptografar</button>
+                        <button class="botao descripBotao">Descriptografar</button></input>
+                    </div>
+                </div>
+            </form>
+
+            <div class="resultado">
+                <p class="resultado__mensagem1">Nenhuma mensagem encontrada.</p>
+                <span class="resultado__mensagem2">Digite um texto que você deseja criptografar ou descriptografar.<span>
+                <button hidden></button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../codificador/index.js"></script>
+</body>
+</html>
