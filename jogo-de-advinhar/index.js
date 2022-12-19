@@ -1,4 +1,4 @@
-let numGerado = (Math.random()*10).toFixed();                                      //gerar nº de 0 a 10
+let numGerado = (Math.random()*10).toFixed(); 
 let botao = document.querySelector('#botaoAposta');
 var tentativas = 1;
 var tentativasRestantes = 4;
@@ -15,7 +15,7 @@ function Verificar(event){
             if(numApostado==numGerado){
                 divInicial.classList.add('hide');
                 divFinal.classList.remove('hide');
-                fraseFinal.textContent = "Parabéns! Eu pensei mesmo no número " + numGerado;
+                fraseFinal.textContent = "Parabéns!🎊🎊🎊 Eu pensei mesmo no número " + numGerado;
                 }else{
                     divInicial.classList.add('hide');
                     divFinal.classList.remove('hide');
@@ -29,7 +29,7 @@ function Verificar(event){
             if(numApostado==numGerado){
                 divInicial.classList.add('hide');
                 divFinal.classList.remove('hide');
-                fraseFinal.textContent = "Parabéns! Eu pensei mesmo no número " + numGerado;
+                fraseFinal.textContent = "Parabéns!🎊🎊🎊 Eu pensei mesmo no número " + numGerado;
             }else{
                 h2Mensagem.textContent = `Errou! Tentativas restantes: ${tentativasRestantes}`;
                 tentativas++;
