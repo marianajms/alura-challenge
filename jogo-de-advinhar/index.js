@@ -2,6 +2,7 @@ let numGerado = (Math.random()*10).toFixed();
 let botao = document.querySelector('#botaoAposta');
 var tentativas = 1;
 var tentativasRestantes = 4;
+var vidas = ["♥","♥","♥","♥","♥"];
 
 function Verificar(event){
     event.preventDefault();
@@ -34,9 +35,19 @@ function Verificar(event){
             
             if(numApostado==numGerado){
                 chuteCerto();
-                
+
             }else{
-                h2Mensagem.textContent = `Errou! Tentativas restantes: ${tentativasRestantes}`;
+                h2Mensagem.textContent = `Errou! Tentativas restantes: `;
+
+                if(tentativasRestantes>0){
+                    vidas.pop();
+                }
+
+                let elementoVidas = document.createElement("span");
+                elementoVidas.textContent=vidas.join('');
+                h2Mensagem.appendChild(elementoVidas);
+                console.log(typeof(vidas))
+
                 tentativas++;
                 tentativasRestantes--;
 
