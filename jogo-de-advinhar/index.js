@@ -10,12 +10,18 @@ function Verificar(event){
     let divInicial = document.querySelector('.screen1');
     let divFinal = document.querySelector('.screen2');
     let fraseFinal = document.querySelector('.fraseFinal');
+
+    function chuteCerto(){
+            divInicial.classList.add('hide');
+            divFinal.classList.remove('hide');
+            fraseFinal.textContent = "Parabéns!🎊🎊🎊 Eu pensei mesmo no número " + numGerado;
+
+    }
     
         if(tentativas == 5){
             if(numApostado==numGerado){
-                divInicial.classList.add('hide');
-                divFinal.classList.remove('hide');
-                fraseFinal.textContent = "Parabéns!🎊🎊🎊 Eu pensei mesmo no número " + numGerado;
+                chuteCerto();
+
                 }else{
                     divInicial.classList.add('hide');
                     divFinal.classList.remove('hide');
@@ -27,9 +33,8 @@ function Verificar(event){
         }if(tentativas<5){
             
             if(numApostado==numGerado){
-                divInicial.classList.add('hide');
-                divFinal.classList.remove('hide');
-                fraseFinal.textContent = "Parabéns!🎊🎊🎊 Eu pensei mesmo no número " + numGerado;
+                chuteCerto();
+                
             }else{
                 h2Mensagem.textContent = `Errou! Tentativas restantes: ${tentativasRestantes}`;
                 tentativas++;
