@@ -15,7 +15,7 @@ function Verificar(event){
     function chuteCerto(){
             divInicial.classList.add('hide');
             divFinal.classList.remove('hide');
-            fraseFinal.textContent = "Parabéns!🎊🎊🎊 Eu pensei mesmo no número " + numGerado;
+            fraseFinal.innerHTML = "Parabéns!🎊🎊🎊 <br> Eu pensei mesmo no número " + numGerado;
 
     }
     
@@ -26,7 +26,7 @@ function Verificar(event){
                 }else{
                     divInicial.classList.add('hide');
                     divFinal.classList.remove('hide');
-                    fraseFinal.textContent = "Você já usou suas cinco tentativas 😔 Eu tinha pensado no número " + numGerado;
+                    fraseFinal.innerHTML = "Você já usou suas cinco tentativas 😔 <br><br>Eu tinha pensado no número " + numGerado;
 
                 }
 
@@ -44,7 +44,8 @@ function Verificar(event){
                 }
 
                 let elementoVidas = document.createElement("span");
-                elementoVidas.textContent=vidas.join('');
+                elementoVidas.textContent=vidas.join(' ');
+                elementoVidas.style.fontSize="25px";
                 h2Mensagem.appendChild(elementoVidas);
                 console.log(typeof(vidas))
 
