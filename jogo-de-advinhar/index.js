@@ -15,20 +15,20 @@ function Verificar(event){
     function chuteCerto(){
             divInicial.classList.add('hide');
             divFinal.classList.remove('hide');
-            fraseFinal.innerHTML = "Parabéns!🎊🎊🎊 <br> Eu pensei mesmo no número " + numGerado;
+            fraseFinal.innerHTML = "🎊🎊🎊 Parabéns 🎊🎊🎊 <br>Eu pensei mesmo no número " + numGerado + "<br><br> Tentativas utilizadas: " + tentativas;
 
     }
     
         if(tentativas == 5){
+
             if(numApostado==numGerado){
                 chuteCerto();
-
-                }else{
+                
+            }else{
                     divInicial.classList.add('hide');
                     divFinal.classList.remove('hide');
                     fraseFinal.innerHTML = "Você já usou suas cinco tentativas 😔 <br><br>Eu tinha pensado no número " + numGerado;
-
-                }
+            }
 
 
         }if(tentativas<5){
