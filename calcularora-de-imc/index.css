@@ -1,0 +1,46 @@
+*{
+text-decoration: none;
+margin: 0;
+padding: 0;
+border: none;
+font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: rgb(0, 0, 93);
+}
+
+.principal{
+    background-color: rgb(223, 223, 223);
+    border-radius: 5px;
+    padding:2em 4em;
+    width: 30%;
+    margin:20vh auto;
+}
+
+.principal h1{
+    font-weight: bolder;
+}
+
+.principal input{
+    width: 100%;
+    padding: 1em 1em;
+    background-color: rgb(202, 202, 202);
+    border-radius: 5px;
+}
+
+.principal p{
+    margin-bottom: -0.7em;
+    margin-top: 1em;
+}
+
+.botao{
+    width: 100%;
+    padding: 0.8em 1em;
+    margin: 1em 0; 
+    background-color: rgb(33, 33, 246);
+    border-radius: 5px;
+    color: rgb(230, 227, 227);
+    font-weight: bold;
+    cursor: pointer;
+}
