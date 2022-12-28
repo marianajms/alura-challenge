@@ -8,17 +8,23 @@ font-family: 'Roboto', sans-serif;
 
 body{
     background-color: rgb(0, 0, 93);
+
+}
+
+.container{
+    display: grid;
+    place-content: center;
+    height: 100vh;
 }
 
 .principal{
     background-color: rgb(223, 223, 223);
     border-radius: 5px;
-    padding:2em 4em;
-    width: 30%;
-    margin:20vh auto;
+    padding:2em 3em;
+
 }
 
-.principal h1{
+.titulo{
     font-weight: bolder;
 }
 
@@ -43,4 +49,41 @@ body{
     color: rgb(230, 227, 227);
     font-weight: bold;
     cursor: pointer;
+}
+
+.botao:hover{
+    background-color: rgb(20, 20, 171);
+}
+
+.modal-container.hide{
+    display: none;
+}
+
+.modal-container{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    background-color: rgba(0, 0, 0, 0.556);
+}
+
+.titulo-modal{
+    font-weight: bolder;
+    font-size: 1em;
+    position: relative;
+}
+
+
+
+.fecharModal{
+    background: none;
+    position:absolute;
+    top:0;
+    right: 0;
+    padding: 0.15em 0.5em;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+
 }
