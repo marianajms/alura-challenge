@@ -81,9 +81,12 @@ body{
     position:absolute;
     top:0;
     right: 0;
-    padding: 0.15em 0.5em;
-    font-size: 1em;
+    padding: 0.15em 0.6em;
+    font-size: 1.5em;
     font-weight: bold;
     cursor: pointer;
+}
 
+.fecharModal:hover{
+    font-size: 1.6em;
 }
