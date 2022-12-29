@@ -5,6 +5,8 @@ const BfecharModal = document.querySelector('.fecharModal');
 const screenResultado = document.querySelector('#screenResultado');
 const resultadoTexto = document.querySelector('.resultado');
 const tituloModal = document.querySelector('.titulo-modal');
+const mensagemErro = document.querySelector('.mensagemDeErro');
+const divErro = document.querySelector('.erro');
 
 
 botao.addEventListener('click',ClicouBotao);
@@ -54,9 +56,11 @@ function ClicouBotao(event){
     VerificarCamposVazios();
 
     if(campoVazio){
-        resultadoTexto.innerText = VerificarCamposVazios();
-        screenResultado.classList.remove('hide');
+        divErro.classList.remove('hide');
+        mensagemErro.innerText = VerificarCamposVazios();
+        
     }else{
+        divErro.classList.add('hide');
         let alturaFormatada = Number(inputAltura.value)/100;
         imc = CalcularIMC(alturaFormatada,inputPeso.value);
         resultadoTexto.innerText = `Seu imc é ${imc.toFixed(2)} e está ${VerificarIMC(imc)}`;

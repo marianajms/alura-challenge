@@ -14,9 +14,9 @@
             <h1 class="titulo">Cálculo de IMC</h1>
             <form action="">
                 <p>Peso(kg)</p><br>
-                <input type="text" id="inputPeso"><br>
+                <input type="text" id="inputPeso" placeholder="60"><br>
                 <p>Altura(cm)</p><br>
-                <input type="text" id="inputAltura"><br>
+                <input type="text" id="inputAltura" placeholder="160"><br>
                 <button class="botao" id="bCalcular">Calcular IMC</button>
             </form>
         </div>
@@ -27,6 +27,10 @@
             <button class="fecharModal">x</button>
             <h2 class="resultado"> </h2>
         </div>
+    </div>
+
+    <div class="erro hide">
+        <h2 class="mensagemDeErro" ></h2>
     </div>
     <script src="./index.js"></script>
 </body>
