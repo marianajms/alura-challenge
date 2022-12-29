@@ -1,33 +1,37 @@
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de IMC</title>
-    <link rel="stylesheet" href="./index.css">
-    <link rel="icon" href="./download.jpg">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <div class="container">
-        <div class="principal">
-            <h1 class="titulo">Cálculo de IMC</h1>
-            <form action="">
-                <p>Peso(kg)</p><br>
-                <input type="text" id="inputPeso"><br>
-                <p>Altura(cm)</p><br>
-                <input type="text" id="inputAltura"><br>
-                <button class="botao" id="bCalcular">Calcular IMC</button>
-            </form>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora de IMC</title>
+        <link rel="stylesheet" href="./index.css">
+        <link rel="icon" href="./download.jpg">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="divErro hide">
+            <p class="pErro">casa</p>
         </div>
-    </div>
 
-    <div class="modal-container container hide" id="screenResultado">
-        <div class=" principal titulo-modal">
-            <button class="fecharModal">x</button>
-            <h2 class="resultado"> </h2>
+        <div class="container">
+            <div class="principal">
+                <h1 class="titulo">Cálculo de IMC</h1>
+                <form action="">
+                    <p>Peso(kg)</p><br>
+                    <input type="text" id="inputPeso" placeholder="60"><br>
+                    <p>Altura(cm)</p><br>
+                    <input type="text" id="inputAltura" placeholder="160"><br>
+                    <button class="botao" id="bCalcular">Calcular IMC</button>
+                </form>
+            </div>
         </div>
-    </div>
-    <script src="./index.js"></script>
-</body>
-</html>
+    
+        <div class="modal-container container hide" id="screenResultado">
+            <div class=" principal titulo-modal">
+                <button class="fecharModal">x</button>
+                <h2 class="resultado"> </h2>
+            </div>
+        </div>
+        <script src="./index.js"></script>
+    </body>
+    </html>
