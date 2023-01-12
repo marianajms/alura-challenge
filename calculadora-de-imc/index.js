@@ -23,6 +23,7 @@ const Modal = {
 
 
 
+
 function VerificarCamposVazios(){
     if(inputAltura.value==''&&inputPeso.value==''){
         campoVazio=true;
@@ -36,6 +37,7 @@ function VerificarCamposVazios(){
     } else campoVazio=false;
     
 }
+
 
 function CalcularIMC(altura,peso){
     let imc = peso/(altura*altura);
@@ -83,3 +85,8 @@ function FecharModal(){
 
 botao.addEventListener('click',ClicouBotao);
 Modal.botaoFechar.addEventListener('click',FecharModal);
+window.addEventListener('keydown', (event)=>{
+    if(event.key === 'Escape'){
+        Modal.fechar();
+    }
+});
