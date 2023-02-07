@@ -1,0 +1,66 @@
+:root{
+    --corDeFundo: #121214;
+    --corBase:#42D3FF;
+}
+*{
+    text-decoration: none; margin:0; padding: 0;font-size: 2rem;font-family: 'Roboto', sans-serif;border: none;box-sizing: border-box; color: aliceblue;font-weight:500;
+}
+
+.hide{
+    display: none;
+}
+body{
+    background-color: var(--corDeFundo);
+    display: grid;
+    height: 100vh;
+}
+
+button{
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+}
+
+svg{
+    width: 1.1em;
+    height: 1.1em;
+
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+    align-self: flex-end;
+    gap: 10px;
+}
+
+.funcionalidades{
+    background-color: #282829;
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(0.2em,0.2em + 1vw,0.7em);
+    width: clamp(0.7em,0.7em + 40vw,5em);
+
+}
+
+.buttonAddTime svg{
+    width: 0.9em;
+    height: 0.9em;
+}
+
+.doisPontosTimer{
+    margin: 0 -0.15em;
+}
+
+.timer{
+    text-align: center;
+}
+
+footer{
+    justify-self: end;
+    align-self: end;
+    padding: 0 30px 30px 0;
+}
+
