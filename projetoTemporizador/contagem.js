@@ -1,12 +1,18 @@
 import Elementos from "./elementos.js";
-
+import {tocarFimDoTempo} from "./sons.js";
+let iniciarContagem;
 function contagem(){
-    setInterval(()=>{
+   iniciarContagem =  setInterval(()=>{
         let segundos = Number(Elementos.divSegundos.textContent);
         let minutos = Number(Elementos.divMinutos.textContent);
-
-
         if((minutos<=0)&(segundos<=0)){
+            tocarFimDoTempo();
+            window.clearInterval(iniciarContagem);
+            setTimeout(()=>{
+                Elementos.divSegundos.innerText = "00"; 
+                Elementos.divMinutos.innerText = "10";  
+            },3000)
+     
             return;
         }
 
@@ -24,4 +30,4 @@ function contagem(){
     
 }
 
-export default contagem;
+export {contagem, iniciarContagem};

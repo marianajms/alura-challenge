@@ -85,6 +85,7 @@ function FecharModal(){
 
 botao.addEventListener('click',ClicouBotao);
 Modal.botaoFechar.addEventListener('click',FecharModal);
+
 window.addEventListener('keydown', (event)=>{
     if(event.key === 'Escape'){
         Modal.fechar();
