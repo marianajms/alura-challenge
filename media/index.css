@@ -1,0 +1,75 @@
+/* Reset de estilos e estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+body {
+    background-color: rgb(248, 246, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupar toda a altura da tela */
+}
+
+#container {
+    text-align: center;
+}
+
+form {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    height: auto; /* Ajustado para altura automática, dependendo do conteúdo */
+    max-width: 400px; /* Limita a largura do formulário para uma melhor leitura */
+    background-color: #fff; /* Fundo branco para melhor legibilidade */
+    border-radius: 5px;
+}
+
+form legend {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem; /* Tamanho da fonte aumentado para ênfase */
+    margin-bottom: 10px; /* Espaçamento inferior para separar o título do formulário */
+}
+
+#botao {
+    cursor: pointer;
+    background-color: #0078d4; /* Cor de destaque para o botão */
+    color: #fff; /* Texto branco para melhor contraste */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s; /* Efeito de transição de cor de fundo suave */
+}
+
+#botao:hover {
+    background-color: #005ba5; /* Cor de destaque alterada ao passar o mouse */
+}
+
+.containerR {
+    display: flex;
+    flex-direction: column; /* Alinha o resultado verticalmente */
+    margin-top: 20px; /* Espaçamento superior para separar o resultado do formulário */
+}
+
+/* Adiciona espaço entre os campos de entrada */
+form h2 {
+    margin-top: 10px;
+}
+
+/* Estiliza os campos de entrada */
+input[type="number"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+}
+
+input[type="number"]:focus {
+    outline: none; /* Remove a borda de foco padrão */
+    border-color: #0078d4; /* Cor de destaque quando o campo está em foco */
+}
